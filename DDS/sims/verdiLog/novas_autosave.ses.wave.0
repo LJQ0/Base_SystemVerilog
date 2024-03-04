@@ -6,7 +6,7 @@ viewPort 0 27 2486 552 100 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
-openDirFile -d / "" "/home/host/.ssh/base/DDS/sims/add_tb.fsdb"
+openDirFile -d / "" "/home/host/.ssh/base/DDS/sims/DDS_tb.fsdb"
 
 ; file time scale:
 ; fileTimeScale ### s|ms|us|ns|ps
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 48994.171875 52119.796875
-cursor 0.000000
-marker 0.000000
+zoom 0.000000 1562500.312500
+cursor 122750.000000
+marker 30.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 4
+markerPos 5
 
 ; event list
 ; addEvent event_name event_expression
@@ -45,12 +45,13 @@ COMPLEX_EVENT_END
 curSTATUS ByChange
 
 
-addGroup "add_inst"
-activeDirFile "" "/home/host/.ssh/base/DDS/sims/add_tb.fsdb"
-addSignal -h 15 /add_tb/add_inst/clk
+addGroup "DDS_inst"
+activeDirFile "" "/home/host/.ssh/base/DDS/sims/DDS_tb.fsdb"
+addSignal -h 15 /DDS_tb/DDS_inst/clk
 addSignal -h 15 -holdScope rst_n
-addSignal -h 15 -UNSIGNED -HEX -holdScope add_i[11:0]
-addSignal -h 15 -UNSIGNED -UDEC -holdScope add_o[11:0]
+addSignal -h 15 -holdScope f_ctrl[19:0]
+addSignal -h 15 -holdScope p_ctrl[11:0]
+addSignal -w analog -ds pwc -h 98 -holdScope out[7:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

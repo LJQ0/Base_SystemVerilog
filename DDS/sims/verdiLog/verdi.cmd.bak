@@ -1,8 +1,74 @@
 debImport "-f" "filelist.f"
-debLoadSimResult /home/host/.ssh/base/DDS/sims/add_tb.fsdb
+debLoadSimResult /home/host/.ssh/base/DDS/sims/DDS_tb.fsdb
 wvCreateWindow
-verdiDockWidgetSetCurTab -dock windowDock_OneSearch
-verdiDockWidgetSetCurTab -dock widgetDock_<Message>
-nsMsgSelect -range {0 0-0}
-nsMsgSelect -range {0 0-0}
+srcHBSelect "DDS_tb.DDS_inst" -win $_nTrace1
+srcHBAddObjectToWave -clipboard
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 2090414.361438 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "DDS_inst" 1 2 3 4 5 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectSignal -win $_nWave2 {( "DDS_inst" 5 )} 
+wvBusWaveform -win $_nWave2 -analog
+wvSetPosition -win $_nWave2 {("DDS_inst" 5)}
+wvSetCursor -win $_nWave2 250849.723373 -snap {("DDS_inst" 5)}
+wvSetMarker -win $_nWave2 491570.000000
+wvZoomCursorMarker -win $_nWave2
+wvZoom -win $_nWave2 245810.000000 491570.000000
+wvShowDeltaFreq -win $_nWave2 -freq
+wvZoom -win $_nWave2 317342.758170 319698.627451
+wvSetCursor -win $_nWave2 318029.501764 -snap {("DDS_inst" 1)}
+wvSetMarker -win $_nWave2 318050.000000
+wvSetCursor -win $_nWave2 317412.561704 -snap {("DDS_inst" 5)}
+wvZoomAll -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSetCursor -win $_nWave2 44610575.370915 -snap {("DDS_inst" 5)}
+wvSetMarker -win $_nWave2 44851250.000000
+wvShowDeltaFreq -win $_nWave2 -delta
+wvZoomCursorMarker -win $_nWave2
+wvZoom -win $_nWave2 44605490.000000 44851250.000000
+wvZoomCursorMarker -win $_nWave2
+wvZoom -win $_nWave2 44605490.000000 44851250.000000
+wvShowDeltaFreq -win $_nWave2 -freq
+srcHBSelect "DDS_tb" -win $_nTrace1
+srcHBSelect "DDS_tb.DDS_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "DDS_tb.DDS_inst" -delim "."
+srcHBSelect "DDS_tb.DDS_inst" -win $_nTrace1
+srcHBSelect "DDS_tb.DDS_inst" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "P_WORD_M" -line 24 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "F_WORD_N" -line 25 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cnt_f" -line 25 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "P_WORD_M" -line 25 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cnt_f\[F_WORD_N-P_WORD_M\]" -line 32 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cnt_f" -line 25 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 44628406.183007 -snap {("G2" 0)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "DDS_inst" 6 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
 debExit

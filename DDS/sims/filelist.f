@@ -1,3 +1,4 @@
 ../src/timescale.sv
-      ../src/add.sv
-      ../tb/add_tb.sv
+      ../src/rom.sv
+      ../tb/DDS_tb.sv
+      ../src/DDS.sv

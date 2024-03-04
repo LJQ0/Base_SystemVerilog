@@ -18,12 +18,12 @@ AnnotationShow = 0
 Console = FALSE
 powerDumped = 0
 [hb]
-postSimFile = /home/host/.ssh/base/DDS/sims/add_tb.fsdb
-syncTime = 0
-viewport = 71 26 2486 1296 0 0 526 2484
-activeNode = "add_tb"
-activeScope = "add_tb"
-activeFile = "../tb/add_tb.sv"
+postSimFile = /home/host/.ssh/base/DDS/sims/DDS_tb.fsdb
+syncTime = 122750
+viewport = 71 26 2486 1296 0 0 551 2484
+activeNode = "DDS_tb"
+activeScope = "DDS_tb"
+activeFile = "../tb/DDS_tb.sv"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
@@ -44,19 +44,19 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "add_tb"
-multipleSelection = 1 10 2 0 0
+Scope1 = "DDS_tb"
+multipleSelection = 2 35 5 0 0 35 10 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-f" "filelist.f" 
 invokeDir = /home/host/.ssh/base/DDS/sims
 [hb.sourceTab.1]
-scope = add_tb
-File = /home/host/.ssh/base/DDS/tb/add_tb.sv
+scope = DDS_tb
+File = /home/host/.ssh/base/DDS/tb/DDS_tb.sv
 Line = 11
 [nMemoryManager]
-WaveformFile = /home/host/.ssh/base/DDS/sims/add_tb.fsdb
+WaveformFile = /home/host/.ssh/base/DDS/sims/DDS_tb.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]

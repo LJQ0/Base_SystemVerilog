@@ -2,11 +2,15 @@
 Command arguments:
     +define+verilog
     -f filelist.f
-        ../scr/timescale.sv
-        ../scr/add.sv
-        ../tb/add_tb.sv
+        ../src/timescale.sv
+        ../src/rom.sv
+        ../tb/DDS_tb.sv
+        ../src/DDS.sv
 
 Highest level modules:
-add_tb
+DDS_tb
 
-Total	0 error(s),   0 warning(s)
+
+*Warning* port sizes differ (1 vs 32) in port connection (port enable)
+"../src/DDS.sv", 56: 
+Total	0 error(s),   1 warning(s)

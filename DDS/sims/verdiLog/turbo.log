@@ -1,9 +1,9 @@
-Command Line: /opt/synopsys/verdi201809/platform/LINUXAMD64/bin/Novas -ssf add_tb.fsdb -f filelist.f
+Command Line: /opt/synopsys/verdi201809/platform/LINUXAMD64/bin/Novas -ssf DDS_tb.fsdb -f filelist.f
 uname(Linux host-virtual-machine 5.15.0-97-generic #107~20.04.1-Ubuntu SMP Fri Feb 9 14:20:11 UTC 2024 x86_64)
 type= DS_SCOPE element= 1 field= 1
-VERILOG add_tb
-VERILOG add_inst
+VERILOG DDS_tb
+VERILOG DDS_inst
 -----
 second field= DebussyLib
-third field= add
-au time 44.105843 6.375691 1.889068 delta 234471424 234471424 total 607989760 607989760
+third field= DDS
+au time 143.934175 7.309317 2.369732 delta 234680320 234680320 total 608198656 608198656
