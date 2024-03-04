@@ -1,9 +1,9 @@
-Command Line: /opt/synopsys/verdi201809/platform/LINUXAMD64/bin/Novas -ssf Divider_2_tb.fsdb -f filelist.f
+Command Line: /opt/synopsys/verdi201809/platform/LINUXAMD64/bin/Novas -ssf Divider_1_tb.fsdb -f filelist.f
 uname(Linux host-virtual-machine 5.15.0-97-generic #107~20.04.1-Ubuntu SMP Fri Feb 9 14:20:11 UTC 2024 x86_64)
 type= DS_SCOPE element= 1 field= 1
-VERILOG Divider_2_tb
-VERILOG Divider_2_inst
+VERILOG Divider_1_tb
+VERILOG Divider_1_inst
 -----
 second field= DebussyLib
-third field= Divider_2
-au time 21.432309 4.468103 0.998216 delta 233693184 233693184 total 607211520 607211520
+third field= Divider_1
+au time 23.654955 3.563138 1.774327 delta 234098688 234098688 total 607617024 607617024

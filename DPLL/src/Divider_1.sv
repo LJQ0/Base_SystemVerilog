@@ -1,15 +1,15 @@
 /***********************************************
 #
-#    Filename: Divider_2.sv
+#    Filename: Divider_1.sv
 #
 #    Author: ThirteenQ LJQ0 ljq1019395070@163.com
-#    Description:偶分频 最高支持100w分频
-#    Create       : 2024-03-04 10:24:50
-#    Last Modified: 2024-03-04 10:24:50
+#    Description: 奇分频
+#    Create       : 2024-03-04 12:11:50
+#    Last Modified: 2024-03-04 12:11:50
 #
 ***********************************************/
-module Divider_2#(
-    parameter DIV_FACTOR    = 4
+module Divider_1#(
+    parameter DIV_FACTOR        = 5
 )(
     input       clk_in,
     input       rst_n,
@@ -17,16 +17,14 @@ module Divider_2#(
     output reg  clk_o
 );
 
-localparam CNT = DIV_FACTOR / 2;
-
 reg [20:0] cnt;
 
-always@(posedge clk_in or negedge rst_n) begin
+always@(clk_in or negedge rst_n) begin
     if(!rst_n) begin
-        clk_o <= 1'b0;
         cnt <= 0;
+        clk_o <= 1'b1;
     end else begin
-        if(cnt == CNT - 1) begin
+        if(cnt == DIV_FACTOR - 1) begin
             cnt <= 0;
             clk_o <= ~clk_o;
         end else begin
@@ -36,3 +34,4 @@ always@(posedge clk_in or negedge rst_n) begin
 end
 
 endmodule
+        

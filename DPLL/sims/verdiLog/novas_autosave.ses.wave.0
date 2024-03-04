@@ -6,7 +6,7 @@ viewPort 0 27 2486 552 100 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
-openDirFile -d / "" "/home/host/.ssh/base/DPLL/sims/Divider_2_tb.fsdb"
+openDirFile -d / "" "/home/host/.ssh/base/DPLL/sims/Divider_1_tb.fsdb"
 
 ; file time scale:
 ; fileTimeScale ### s|ms|us|ns|ps
@@ -16,7 +16,7 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 202020.200000
+zoom 0.000000 2048.000000
 cursor 0.000000
 marker 0.000000
 
@@ -45,9 +45,9 @@ COMPLEX_EVENT_END
 curSTATUS ByChange
 
 
-addGroup "Divider_2_inst"
-activeDirFile "" "/home/host/.ssh/base/DPLL/sims/Divider_2_tb.fsdb"
-addSignal -h 15 /Divider_2_tb/Divider_2_inst/clk_in
+addGroup "Divider_1_inst"
+activeDirFile "" "/home/host/.ssh/base/DPLL/sims/Divider_1_tb.fsdb"
+addSignal -h 15 /Divider_1_tb/Divider_1_inst/clk_in
 addSignal -h 15 -holdScope rst_n
 addSignal -h 15 -holdScope clk_o
 addGroup "G2"

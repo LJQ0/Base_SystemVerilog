@@ -1,3 +1,3 @@
 ../src/timescale.sv
-      ../src/Divider_2.sv
-      ../tb/Divider_2_tb.sv
+      ../src/Divider_1.sv
+      ../tb/Divider_1_tb.sv

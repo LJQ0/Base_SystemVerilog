@@ -18,12 +18,12 @@ AnnotationShow = 0
 Console = FALSE
 powerDumped = 0
 [hb]
-postSimFile = /home/host/.ssh/base/DPLL/sims/Divider_2_tb.fsdb
+postSimFile = /home/host/.ssh/base/DPLL/sims/Divider_1_tb.fsdb
 syncTime = 0
 viewport = 71 26 2486 1296 0 0 526 2484
-activeNode = "Divider_2_tb"
-activeScope = "Divider_2_tb"
-activeFile = "../tb/Divider_2_tb.sv"
+activeNode = "Divider_1_tb.Divider_1_inst"
+activeScope = "Divider_1_tb.Divider_1_inst"
+activeFile = "../src/Divider_1.sv"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
@@ -44,7 +44,8 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "Divider_2_tb"
+Scope1 = "Divider_1_tb.Divider_1_inst"
+Scope2 = "Divider_1_tb"
 multipleSelection = 1 10 2 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
@@ -52,11 +53,11 @@ simFlow = FALSE
 importCmd = "-f" "filelist.f" 
 invokeDir = /home/host/.ssh/base/DPLL/sims
 [hb.sourceTab.1]
-scope = Divider_2_tb
-File = /home/host/.ssh/base/DPLL/tb/Divider_2_tb.sv
+scope = Divider_1_tb.Divider_1_inst
+File = /home/host/.ssh/base/DPLL/src/Divider_1.sv
 Line = 11
 [nMemoryManager]
-WaveformFile = /home/host/.ssh/base/DPLL/sims/Divider_2_tb.fsdb
+WaveformFile = /home/host/.ssh/base/DPLL/sims/Divider_1_tb.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]

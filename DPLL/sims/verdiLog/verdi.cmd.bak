@@ -1,9 +1,25 @@
 debImport "-f" "filelist.f"
-debLoadSimResult /home/host/.ssh/base/DPLL/sims/Divider_2_tb.fsdb
+debLoadSimResult /home/host/.ssh/base/DPLL/sims/Divider_1_tb.fsdb
 wvCreateWindow
-srcHBSelect "Divider_2_tb.Divider_2_inst" -win $_nTrace1
+srcHBSelect "Divider_1_tb.Divider_1_inst" -win $_nTrace1
 srcHBAddObjectToWave -clipboard
 wvDrop -win $_nWave2
-wvSetCursor -win $_nWave2 126.116654 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 3837.943669 -snap {("G2" 0)}
 wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 13556.039564 15844.721569
+wvSetCursor -win $_nWave2 13666.733988 -snap {("G2" 0)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 0.000000 704.209847
+srcHBSelect "Divider_1_tb.Divider_1_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "Divider_1_tb.Divider_1_inst" -delim "."
+srcHBSelect "Divider_1_tb.Divider_1_inst" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cnt" -line 24 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "Divider_1_inst" 4 )} 
+wvSetRadix -win $_nWave2 -format UDec
 debExit

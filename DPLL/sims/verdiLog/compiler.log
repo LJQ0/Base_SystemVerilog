@@ -3,10 +3,10 @@ Command arguments:
     +define+verilog
     -f filelist.f
         ../src/timescale.sv
-        ../src/Divider_2.sv
-        ../tb/Divider_2_tb.sv
+        ../src/Divider_1.sv
+        ../tb/Divider_1_tb.sv
 
 Highest level modules:
-Divider_2_tb
+Divider_1_tb
 
 Total	0 error(s),   0 warning(s)

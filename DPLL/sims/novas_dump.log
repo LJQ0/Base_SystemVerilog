@@ -223,7 +223,7 @@ LESS=-R
 nord12=#d08770
 nord2=#434c5e
 novas_args=-P /opt/synopsys/verdi201809/share/PLI/VCS/LINUX64/novas.tab   /opt/synopsys/verdi201809/share/PLI/VCS/LINUX64/pli.a 
-OLDPWD=/home/host
+OLDPWD=/home/host/.ssh/base/DPLL/tb
 NOVAS=/opt/synopsys/verdi201809/share/PLI/VCS/LINUX64
 MAKEFLAGS=
 MFLAGS=
@@ -260,8 +260,8 @@ SPECMAN_OUTPUT_TO_TTY=1
 Runtime command line arguments:
 argv[0]=./simv
 261 profile - 100
-          CPU/Mem usage: 0.050 sys,  0.280 user,  182.75M mem
-262 Mon Mar  4 11:33:21 2024
+          CPU/Mem usage: 0.040 sys,  0.270 user,  182.76M mem
+262 Mon Mar  4 12:24:26 2024
 263 pliAppInit
 264 FSDB_GATE is set.
 265 FSDB_RTL is set.
@@ -271,13 +271,13 @@ argv[0]=./simv
 269 LIBSSCORE=found /opt/synopsys/verdi201809/share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
 270 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
 271 (C) 1996 - 2019 by Synopsys, Inc.
-272 sps_call_fsdbDumpfile_main at 0 : ../tb/Divider_2_tb.sv(39)
-273 argv[0]: (Divider_2_tb.fsdb)
-274 *Verdi* : Create FSDB file 'Divider_2_tb.fsdb'
+272 sps_call_fsdbDumpfile_main at 0 : ../tb/Divider_1_tb.sv(40)
+273 argv[0]: (Divider_1_tb.fsdb)
+274 *Verdi* : Create FSDB file 'Divider_1_tb.fsdb'
 275 compile option from '/home/host/.ssh/base/DPLL/sims/simv.daidir/vcs_rebuild'.
 276   "vcs '-LDFLAGS' '-Wl,--no-as-needed' '-full64' '+v2k' '-fsdb' '+define+FSDB' '-sverilog' '-f' 'filelist.f' 2>&1"
 277 FSDB_VCS_ENABLE_FAST_VC is enable
-278 sps_call_fsdbDumpvars_vd_main at 0 : ../tb/Divider_2_tb.sv(40)
+278 sps_call_fsdbDumpvars_vd_main at 0 : ../tb/Divider_1_tb.sv(41)
 279 argv[0]: (+mda)
 280 [spi_vcs_vd_ppi_create_root]: no upf option
 281 [spi_vcs_vd_ppi_create_root]: no debug option
@@ -287,15 +287,15 @@ argv[0]=./simv
 285 *Verdi* : End of traversing.
 286 pliAppHDL_DumpVarComplete traverse var: profile - 
           CPU/Mem usage: 0.050 sys,  0.280 user,  275.62M mem
-                   incr: 0.000 sys,  0.000 user,  5.32M mem
-                   accu: 0.000 sys,  0.000 user,  5.32M mem
-              accu incr: 0.000 sys,  0.000 user,  5.32M mem
+                   incr: 0.000 sys,  0.000 user,  5.33M mem
+                   accu: 0.000 sys,  0.000 user,  5.33M mem
+              accu incr: 0.000 sys,  0.000 user,  5.33M mem
 
           Count usage: 7 var,  4 idcode,  4 callback
                  incr: 7 var,  4 idcode,  4 callback
                  accu: 7 var,  4 idcode,  4 callback
             accu incr: 7 var,  4 idcode,  4 callback
-287 Mon Mar  4 11:33:21 2024
+287 Mon Mar  4 12:24:26 2024
 288 pliAppHDL_DumpVarComplete: profile - 
           CPU/Mem usage: 0.050 sys,  0.280 user,  276.67M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
@@ -306,15 +306,15 @@ argv[0]=./simv
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 7 var,  4 idcode,  4 callback
             accu incr: 0 var,  0 idcode,  0 callback
-289 Mon Mar  4 11:33:21 2024
+289 Mon Mar  4 12:24:26 2024
 290 End of simulation at 200020
-291 Mon Mar  4 11:33:23 2024
+291 Mon Mar  4 12:24:27 2024
 292 Begin FSDB profile info:
-293 FSDB Writer : bc1(20046) bcn(10002) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.003154) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+293 FSDB Writer : bc1(24006) bcn(20002) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.004980) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 294 End FSDB profile info
 295 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-296                        ProduceTime:0.358332545 ConsumerTime:0.000000000 Buffer:64MB
+296                        ProduceTime:0.354782686 ConsumerTime:0.000000000 Buffer:64MB
 297 SimExit
 298 Sim process exit
