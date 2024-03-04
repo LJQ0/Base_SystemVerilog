@@ -1,0 +1,8 @@
+debImport "-f" "filelist.f"
+debLoadSimResult /home/host/.ssh/base/DDS/sims/add_tb.fsdb
+wvCreateWindow
+verdiDockWidgetSetCurTab -dock windowDock_OneSearch
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+nsMsgSelect -range {0 0-0}
+nsMsgSelect -range {0 0-0}
+debExit
