@@ -1,0 +1,9 @@
+debImport "-f" "filelist.f"
+debLoadSimResult /home/host/.ssh/base/DPLL/sims/Divider_2_tb.fsdb
+wvCreateWindow
+srcHBSelect "Divider_2_tb.Divider_2_inst" -win $_nTrace1
+srcHBAddObjectToWave -clipboard
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 126.116654 -snap {("G2" 0)}
+wvZoomAll -win $_nWave2
+debExit
