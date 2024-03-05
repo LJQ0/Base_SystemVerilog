@@ -20,7 +20,7 @@ powerDumped = 0
 [hb]
 postSimFile = /home/host/.ssh/base/ROM/sims/ROM_tb.fsdb
 syncTime = 0
-viewport = 71 26 2486 1296 0 0 526 2484
+viewport = 71 26 2488 1536 0 0 646 2486
 activeNode = "ROM_tb"
 activeScope = "ROM_tb"
 activeFile = "../tb/ROM_tb.sv"
@@ -60,7 +60,7 @@ WaveformFile = /home/host/.ssh/base/ROM/sims/ROM_tb.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 2486 552 100 65
+viewPort = 0 27 2488 672 100 65
 primaryWindow = TRUE
 SessionFile = /home/host/.ssh/base/ROM/sims/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE
