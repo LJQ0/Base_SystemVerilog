@@ -1,0 +1,9 @@
+Command Line: /opt/synopsys/verdi201809/platform/LINUXAMD64/bin/Novas -ssf ram_tb.fsdb -f filelist.f
+uname(Linux host-virtual-machine 5.15.0-97-generic #107~20.04.1-Ubuntu SMP Fri Feb 9 14:20:11 UTC 2024 x86_64)
+type= DS_SCOPE element= 1 field= 1
+VERILOG ram_tb
+VERILOG ram_inst
+-----
+second field= DebussyLib
+third field= ram
+au time 147.347651 6.668082 2.624137 delta 302321664 302321664 total 675840000 675840000

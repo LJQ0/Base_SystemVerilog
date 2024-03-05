@@ -1,0 +1,15 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        ../src/timescale.sv
+        ../src/ram.sv
+        ../tb/ram_tb.sv
+
+
+*Error* non-constant instance parameter
+"../src/ram.sv", 14: 
+Highest level modules:
+ram_tb
+
+Total	1 error(s),   0 warning(s)
