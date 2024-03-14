@@ -4,7 +4,7 @@ wvCreateWindow
 srcHBSelect "ROM_tb.ROM_inst" -win $_nTrace1
 srcHBAddObjectToWave -clipboard
 wvDrop -win $_nWave2
-wvSetCursor -win $_nWave2 433454.888986 -snap {("G2" 0)}
+wvSetCursor -win $_nWave2 405823.724696 -snap {("G2" 0)}
 wvZoomAll -win $_nWave2
 wvSelectSignal -win $_nWave2 {( "ROM_inst" 5 )} 
 wvBusWaveform -win $_nWave2 -analog

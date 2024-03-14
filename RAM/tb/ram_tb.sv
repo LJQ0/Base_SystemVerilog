@@ -32,6 +32,7 @@ initial begin
     #300  
     wr_en = 0;
     re_en = 1;
+    $display(data_io);
     #400
     temp = 1;
     #500
@@ -39,7 +40,7 @@ initial begin
     wr_en = 1;
 
     #100_00
-    $stop(0);
+    $finish(0);
 end 
 
 always #5 clk = ~clk;
@@ -60,6 +61,8 @@ always@(posedge clk or negedge rst_n) begin
         end 
     end
 end
+
+
 
 assign data_io = wr_en ? ram : 32'bZ;
 

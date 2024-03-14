@@ -72,13 +72,13 @@ VCS_ARCH=linux64
 USERNAME=host
 UNAME=/bin/uname
 TOOL_HOME=/opt/synopsys/vcs201809/linux64
-TMUX_PANE=%0
-TMUX=/tmp//tmux-1000/default,2835,0
+TMUX_PANE=%1
+TMUX=/tmp//tmux-1000/default,3050,0
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
-SSH_AGENT_PID=1702
+SSH_AGENT_PID=1715
 SNPS_VCS_INTERNAL_UBUNTU_PRE_LDFLAGS= -no-pie 
 SNPSYS_HOME=/opt/synopsys
-SESSION_MANAGER=local/host-virtual-machine:@/tmp/.ICE-unix/1743,unix/host-virtual-machine:/tmp/.ICE-unix/1743
+SESSION_MANAGER=local/host-virtual-machine:@/tmp/.ICE-unix/1756,unix/host-virtual-machine:/tmp/.ICE-unix/1756
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QT_IM_MODULE=fcitx
@@ -90,9 +90,9 @@ NOVAS_HOME=/opt/synopsys/verdi201809
 NOVAS=/opt/synopsys/verdi201809/share/PLI/VCS/LINUX64
 NEMU_HOME=/home/host/.ssh/ysyx-workbench/nemu
 MFLAGS=
-MANAGERPID=1608
-MAKE_TERMOUT=/dev/pts/1
-MAKE_TERMERR=/dev/pts/1
+MANAGERPID=1621
+MAKE_TERMOUT=/dev/pts/2
+MAKE_TERMERR=/dev/pts/2
 MAKELEVEL=1
 MAKEFLAGS=
 LSCOLORS=Gxfxcxdxbxegedabagacad
@@ -107,14 +107,14 @@ LC_MEASUREMENT=zh_CN.UTF-8
 LC_IDENTIFICATION=zh_CN.UTF-8
 LC_ALL=C
 LC_ADDRESS=zh_CN.UTF-8
-JOURNAL_STREAM=8:63109
-INVOCATION_ID=e91f9f30a5b34c0d97ec7ca3f6962df5
+JOURNAL_STREAM=8:64149
+INVOCATION_ID=f19d9d4537c2447cbb281b50350b9e53
 IM_CONFIG_PHASE=1
 GTK_MODULES=gail:atk-bridge
 GTK_IM_MODULE=fcitx
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-GNOME_TERMINAL_SERVICE=:1.82
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/756d5ce3_a2e9_42b1_ab8e_e4ca303fe438
+GNOME_TERMINAL_SERVICE=:1.83
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/90d23bcc_d81a_443f_a4c3_4969f06b9c99
 GNOME_SHELL_SESSION_MODE=ubuntu
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 GDMSESSION=ubuntu
@@ -126,7 +126,7 @@ CLUTTER_IM_MODULE=fcitx
 AM_HOME=/home/host/.ssh/ysyx-workbench/abstract-machine
 0
 5
-1709640055 ../tb/ram_tb.sv
+1709949384 ../tb/ram_tb.sv
 1709639558 ../src/ram.sv
 1709626634 ../src/timescale.sv
 1709635471 filelist.f
@@ -136,5 +136,5 @@ AM_HOME=/home/host/.ssh/ysyx-workbench/abstract-machine
 1551421792 /opt/synopsys/vcs201809/linux64/lib/liberrorinf.so
 1551421768 /opt/synopsys/vcs201809/linux64/lib/libsnpsmalloc.so
 1551421789 /opt/synopsys/vcs201809/linux64/lib/libvfs.so
-1709640063 simv.daidir
+1709949389 simv.daidir
 -1 partitionlib

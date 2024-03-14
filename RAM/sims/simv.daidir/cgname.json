@@ -5,16 +5,16 @@
         "module",
         1
     ],
-    "ram_tb": [
-        "ram_tb",
-        "mLbZt",
-        "module",
-        2
-    ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
         3
+    ],
+    "ram_tb": [
+        "ram_tb",
+        "mLbZt",
+        "module",
+        2
     ]
 }

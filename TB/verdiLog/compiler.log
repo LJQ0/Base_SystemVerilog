@@ -1,0 +1,18 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        ./timescale.sv
+        ./top.sv
+        ./top_tb.sv
+
+
+*Error* Syntax error at [
+"./top_tb.sv", 17: 
+Highest level modules:
+top_tb
+
+
+*Warning* port sizes differ (4 vs 1) in port connection (port g_o)
+"./top_tb.sv", 35: 
+Total	1 error(s),   1 warning(s)
