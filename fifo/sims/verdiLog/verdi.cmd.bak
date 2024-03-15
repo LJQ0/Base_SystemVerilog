@@ -1,0 +1,256 @@
+debImport "-f" "filelist.f"
+debLoadSimResult /home/host/.ssh/base/fifo/sims/fifo_tb.fsdb
+wvCreateWindow
+srcHBSelect "fifo_tb.fifo_inst" -win $_nTrace1
+srcHBAddObjectToWave -clipboard
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 47.471320 -snap {("G2" 0)}
+wvZoomAll -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+srcHBSelect "fifo_tb.fifo_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "fifo_tb.fifo_inst" -delim "."
+srcHBSelect "fifo_tb.fifo_inst" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "arm" -line 22 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cnt_w" -line 23 -pos 1 -win $_nTrace1
+srcSelect -signal "cnt_r" -line 24 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "fifo_inst" 9 )} 
+wvSelectSignal -win $_nWave2 {( "fifo_inst" 9 10 11 )} 
+wvSelectSignal -win $_nWave2 {( "fifo_inst" 9 10 11 )} 
+wvSetRadix -win $_nWave2 -format UDec
+wvSetCursor -win $_nWave2 917.856754 -snap {("G2" 0)}
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "fifo_inst" 9 )} 
+wvSetPosition -win $_nWave2 {("fifo_inst" 9)}
+wvExpandBus -win $_nWave2 {("fifo_inst" 9)}
+wvSetPosition -win $_nWave2 {("fifo_inst" 267)}
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 11
+wvScrollUp -win $_nWave2 195
+wvSelectSignal -win $_nWave2 {( "fifo_inst" 9 )} 
+wvSetPosition -win $_nWave2 {("fifo_inst" 9)}
+wvCollapseBus -win $_nWave2 {("fifo_inst" 9)}
+wvSetPosition -win $_nWave2 {("fifo_inst" 9)}
+wvSetPosition -win $_nWave2 {("fifo_inst" 11)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 518.273028 540.497429
+wvSetCursor -win $_nWave2 19.999540 -snap {("fifo_inst" 4)}
+srcDeselectAll -win $_nTrace1
+srcSetOptions -win $_nTrace1 -annotate on
+schSetOptions -win $_nSchema1 -annotate on
+wvSetCursor -win $_nWave2 20.996975 -snap {("fifo_inst" 3)}
+wvSetCursor -win $_nWave2 23.001529 -snap {("fifo_inst" 3)}
+wvSelectSignal -win $_nWave2 {( "fifo_inst" 9 )} 
+wvSetPosition -win $_nWave2 {("fifo_inst" 9)}
+wvExpandBus -win $_nWave2 {("fifo_inst" 9)}
+wvSetPosition -win $_nWave2 {("fifo_inst" 267)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollDown -win $_nWave2 0
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 5
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 7
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 8
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 8
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 4
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 3
+wvScrollUp -win $_nWave2 2
+wvScrollUp -win $_nWave2 1
+debExit

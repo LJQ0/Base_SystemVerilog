@@ -1,0 +1,90 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f filelist.f
+        ../src/timescale.sv
+        ../src/fifo_top.sv
+        ../tb/fifo_tb.sv
+
+
+*Error* Syntax error at [
+"../tb/fifo_tb.sv", 13: 
+
+*Error* Syntax error at i
+"../tb/fifo_tb.sv", 27: 
+
+*Error* Syntax error at <
+"../tb/fifo_tb.sv", 27: 
+
+*Error* Syntax error at ++
+"../tb/fifo_tb.sv", 27: 
+
+*Error* Syntax error at =
+"../tb/fifo_tb.sv", 32: 
+
+*Error* Syntax error at #
+"../tb/fifo_tb.sv", 33: 
+
+*Error* Syntax error at =
+"../tb/fifo_tb.sv", 34: 
+
+*Error* Syntax error at #
+"../tb/fifo_tb.sv", 35: 
+
+*Error* Syntax error at $finish
+"../tb/fifo_tb.sv", 36: 
+
+*Error* Syntax error at end
+"../tb/fifo_tb.sv", 37: 
+
+*Error* Syntax error at [
+"../tb/fifo_tb.sv", 39: 
+
+*Error* in is referenced before declaration
+"../tb/fifo_tb.sv", 28: 
+
+*Error* cnt is referenced before declaration
+"../tb/fifo_tb.sv", 43: 
+
+*Error* cnt is referenced before declaration
+"../tb/fifo_tb.sv", 45: 
+
+*Error* cnt is referenced before declaration
+"../tb/fifo_tb.sv", 45: 
+
+*Error* unknown memory in in
+"../tb/fifo_tb.sv", 57: 
+
+*Error* missing end in for statement
+"../tb/fifo_tb.sv", 27: 
+
+*Error* missing initial in for statement
+"../tb/fifo_tb.sv", 27: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/fifo_tb.sv", 28: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/fifo_tb.sv", 43: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/fifo_tb.sv", 45: 
+Highest level modules:
+fifo_tb
+
+
+*Error* failed to find identifier int
+"../tb/fifo_tb.sv", 27: 
+
+*Error* failed to find identifier i
+"../tb/fifo_tb.sv", 27: 
+
+*Error* failed to find identifier i
+"../tb/fifo_tb.sv", 27: 
+
+*Error* failed to find identifier i
+"../tb/fifo_tb.sv", 28: 
+
+*Error* failed to find identifier i
+"../tb/fifo_tb.sv", 28: 
+Total	26 error(s),   0 warning(s)
